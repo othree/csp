@@ -5,5 +5,3 @@ const CSP = (directives) => {
     })
     .join('; ') + ';';
 };
-
-module.exports = CSP;

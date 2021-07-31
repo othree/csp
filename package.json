@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/othree/csp/issues"
   },
-  "homepage": "https://github.com/othree/csp#readme"
+  "homepage": "https://github.com/othree/csp#readme",
+  "devDependencies": {
+    "tape": "^5.3.0"
+  }
 }
