@@ -10,6 +10,12 @@ const CSP = (directives) => {
 };
 ```
 
+Minimized:
+
+```
+const CSP = p => p.map(d => `${d.name} ${d.value.join(' ')}`).join('; ') + ';';
+```
+
 Sample structure of directives:
 
 ```
