@@ -4,16 +4,16 @@
 const CSP = (directives) => {
   return directives
     .map((directive) => {
-    	return `${directive.name} ${directive.value.join(' ')}`;
+    	return `${directive.name} ${directive.value.join(' ')};`;
     })
-    .join('; ') + ';';
+    .join(' ');
 };
 ```
 
 Minimized:
 
 ```
-const CSP = p => p.map(d => `${d.name} ${d.value.join(' ')}`).join('; ') + ';';
+const CSP = p => p.map(d => `${d.name} ${d.value.join(' ')};`).join(' ');
 ```
 
 Sample structure of directives:
@@ -43,7 +43,9 @@ Sample structure of directives:
 
 ```
 
-The data structure of directives is based on how to parse CSP section in the [Content Security Policy Level 3][p]
+The data structure of directives is based on how to parse CSP section in the [Content Security Policy Level 3][p].
+
+Data structure in TypeScript notation:
 
 ```
 type Directive = {
@@ -59,6 +61,8 @@ type Policy = {
 
 type Policies = Policy[];
 ```
+
+PS. There is no ordered set in TypeScript so here we use array instead.
 
 [g]:https://w3c.github.io/webappsec-csp/#framework-policy
 [p]:https://github.com/google/csp-evaluator/blob/master/csp.ts
