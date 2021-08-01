@@ -1,7 +1,6 @@
 # CSP
 
 
-
 ```javascript
 const CSP = (directives) => {
   return directives
@@ -50,9 +49,11 @@ The data structure of directives is based on section 2.2 in the [Content Securit
 Data structure in TypeScript notation:
 
 ```typescript
+type Source = string;
+
 type Directive = {
   name: string;
-  value: string[];
+  value: Source[];
 };
 
 type Policy = {
