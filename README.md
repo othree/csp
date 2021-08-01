@@ -1,5 +1,7 @@
 # CSP
 
+
+
 ```javascript
 const CSP = (directives) => {
   return directives
@@ -43,7 +45,7 @@ Sample structure of directives:
 
 ```
 
-The data structure of directives is based on how to parse CSP section in the [Content Security Policy Level 3][p].
+The data structure of directives is based on section 2.2 in the [Content Security Policy Level 3][p].
 
 Data structure in TypeScript notation:
 
@@ -56,13 +58,11 @@ type Directive = {
 type Policy = {
   source: "header" | "meta";
   disposition: "enforce" | "report";
-  directiveSet: Directive[];
+  directiveSet: OrderedSet<Directive>;
 };
 
 type Policies = Policy[];
 ```
-
-PS. There is no ordered set in TypeScript so here we use array instead.
 
 [g]:https://w3c.github.io/webappsec-csp/#framework-policy
 [p]:https://github.com/google/csp-evaluator/blob/master/csp.ts
