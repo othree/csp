@@ -1,5 +1,10 @@
 # CSP
 
+## Usage
+
+Just copy the code snippets to your function and use it. See [examples][] to learn more.
+
+[examples]:https://github.com/othree/csp/tree/master/examples/
 
 ```javascript
 const CSP = (directives) => {
@@ -43,6 +48,8 @@ Sample structure of directives:
 ]
 
 ```
+
+## MISC
 
 The data structure of directives is based on section 2.2 in the [Content Security Policy Level 3][p].
 
