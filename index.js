@@ -1,4 +1,4 @@
-const CSP = (directives) => {
+cmakonst CSP = (directives) => {
   return directives
     .map((directive) => {
     	return `${directive.name} ${directive.value.join(' ')};`;
@@ -7,3 +7,4 @@ const CSP = (directives) => {
 };
 
 module.exports = CSP;
+
