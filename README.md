@@ -10,7 +10,7 @@ code or use any NPM module.
 
 ## Usage
 
-Just copy the code snippets to your function and use it. See [examples][] to learn more.
+Just copy the code snippets to your function and use it. See [examples][] for real use case.
 
 [examples]:https://github.com/othree/csp/tree/master/examples/
 
