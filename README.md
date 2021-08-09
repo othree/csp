@@ -1,5 +1,13 @@
 # CSP
 
+## Motivation
+
+When writing Lambda@Edge functions, I always prefer not to use any NPM modules to reduce
+the complexity when deploying. This approach also helps reduce the total code size. 
+But without any helper. It is tough to maintain the CSP header. So I implement this small 
+function to help manage the CSP in a structured data format. And don't need to add too much 
+code or use any NPM module.
+
 ## Usage
 
 Just copy the code snippets to your function and use it. See [examples][] to learn more.
@@ -16,7 +24,7 @@ const CSP = (directives) => {
 };
 ```
 
-Minimized:
+Compat:
 
 ```javascript
 const CSP = p => p.map(d => `${d.name} ${d.value.join(' ')};`).join(' ');
