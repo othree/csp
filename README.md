@@ -80,5 +80,5 @@ type Policy = {
 type Policies = Policy[];
 ```
 
-[g]:https://w3c.github.io/webappsec-csp/#framework-policy
-[p]:https://github.com/google/csp-evaluator/blob/master/csp.ts
+[p]:https://w3c.github.io/webappsec-csp/#framework-policy
+[g]:https://github.com/google/csp-evaluator/blob/master/csp.ts
