@@ -1,7 +1,7 @@
 const test = require('tape');
 
 const CSP = require('./');
-const CSPmin = require('./index.min.js');
+const CSPcompact = require('./index.compact.js');
 
 test('blog.othree.net', function (t) {
   t.plan(2);
@@ -97,6 +97,6 @@ test('blog.othree.net', function (t) {
   };
 
   t.equal(CSP(policy.directives), expected);
-  t.equal(CSPmin(policy.directives), expected);
+  t.equal(CSPcompact(policy.directives), expected);
 });
 
