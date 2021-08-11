@@ -24,7 +24,7 @@ const CSP = (directives) => {
 };
 ```
 
-Compat:
+Compact:
 
 ```javascript
 const CSP = p => p.map(d => `${d.name} ${d.value.join(' ')};`).join(' ');
